@@ -10,6 +10,12 @@ describe("Prueba de jest", () =>{
         const user = new User(1, 'Cristian hdz', 'Cris', 'Bio')
         expect(user.dateCreated).not.toBeUndefined()
         expect(user.lastUpdated).not.toBeUndefined()
-
+    })
+    test("Requerimiento 3: Prueba de getters", () =>{
+        const user = new User(1, 'Cristian Hdz', 'Cris', 'Bio')
+        expect(user.getId).toBe(1)
+        expect(user.getUsername).toBe('Cristian Hdz')
+        expect(user.getName).toBe('Cris')
+        expect(user.getBio).toBe('Bio')
     })
 })
