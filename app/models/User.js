@@ -23,6 +23,12 @@ class User{
     get getBio(){
         return this.bio
     }
+    set setBio(newBio){
+        this.bio = newBio
+    }
+    set setUsername(newUsername){
+        this.Username = newUsername
+    }
 }
 
 module.exports= User
